@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>todomvc</title>
+    
+    <style>
+        
+              
+    .framworks .every_line li{
+    position: relative;
+    height: 40px;
+    padding: 0 50px;
+    }
+ 
+    .framworks .every_line li input{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+
+    cursor: pointer;
+    }
+ 
+    a{
+    text-decoration: none;
+    }
+ 
+    .framworks .every_line li a{
+    position: absolute;
+    top: 3px;
+    left: 200px;
+   
+    cursor: pointer;
+    }
+    </style>
+
+</head>
+
+
+<body>
+
+    <form action="javascript:control_all()" >
+        <label >todomvc</label>
+        <input  id="title"  placeholder="添加TODO" >
+    </form>
+
+    <div class="framworks">
+        <div class="every_line">
+
+            <h4>待做项<span id="todocount">0</span></h4>
+            <div ><ol class="todolist" id="todolist"></ol></div>
+            
+            
+            <h4>完成项<span id="donecount">0</span></h4>
+            <div ><ol class="donelist" id="donelist"></ol></div>
+
+        </div>
+    </div>
+ 
+
+
+    <div >
+        <input type="button" value="        " onclick="javascript:clear();">
+    </div>
+
+
+    <div >
+        <a type="button" onclick="javascript:clear();"></a>
+        <a href="javascript:clear();">删除全部</a>
+    </div>
+ 
+    <script type="text/javascript" src="0.js"></script>
+</body>
+</html>
